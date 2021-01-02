@@ -2,4 +2,5 @@ Rails.application.routes.draw do
 
   root 'blog#index'
   get 'about' , to: 'blog#about'
+  resources :articles , only: [:show]
 end
